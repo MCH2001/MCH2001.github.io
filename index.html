@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Chardenet's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.css">
     <!-- Consider linking to a Google Fonts stylesheet for more font options -->
 </head>
 <body>
-    <header>
+    <div class="container">
+    <header class="header">
         <h1>Martin Chardenet</h1>
     </header>
     <nav class="navbar">
@@ -16,8 +17,6 @@
         <a href="english-cv.pdf">CV (English)</a>
         <a href="projets.html">Projects</a>
         <a href="https://www.linkedin.com/in/martin-chardenet/" target="_blank">LinkedIn</a>
-        <a href="francais.html">FR</a>
-        <a href="english-cv.pdf">EN</a>
     </nav>
 
     <section class="about-me">
@@ -26,40 +25,71 @@
     </section>
     <section class="portfolio">
         <h2>Portfolio</h2>
-        <div class="project">
+        <div class="project-item">
+
             <a href="projets.html#project1">
                 <img src="animaux.png" alt="Animal Adoption Website Thumbnail">
+            <div class="project-info">
                 <h3>Animal Adoption Website</h3>
+                <p>Small web application designed to facilitate animal adoption, connecting prospective pet owners with animals in need of a forever home. Developed using Flask for the backend and Oracle SQL for the database, it ensures efficient user request handling and reliable data management</p>
+            </div>
             </a>
-            <p>Small web application designed to facilitate animal adoption, connecting prospective pet owners with animals in need of a forever home.</p>
+        </div>    
 
+        <div class="project-item">
             <a href="projets.html#project2">
-                <img src="path/to/project1-thumbnail.jpg" alt="Star Simulator">
-                <h3>Star Simulator</h3>
-            </a>
-            <p>Simulator leveraging a star database to render the night sky in some big cities</p>
 
+                <img src="star2.png" alt="">
+                <div class="project-info">
+                <h3>Star Simulator</h3>
+                <p>Developed in <b>Python</b>, this simulator leverages a star <b>database</b> to render the night sky as seen from various parts of the world. It provides an educational tool to explore constellations, star names, and celestial events with accuracy and scientific detail.s</p>
+            </div>
+            </a>
+
+        </div>
+
+        <div class="project-item">
             <a href="projets.html#project3">
                 <img src="snake.png" alt="Snake Game">
+                <div class="project-info">
                 <h3>Snake Game</h3>
+                <p>A classic Snake game implemented in <b>Java</b>. This project was focused on creating a responsive and enjoyable game experience, incorporating features like increasing difficulty levels, score tracking, and intuitive controls.</p>
+            </div>
             </a>
-            <p>Simple snake game made implementing  swing gui</p>
+
+            
+        </div>
+
+        <div class="project-item">
 
             <a href="projets.html#project4">
                 <img src="pathCalcul.png" alt="Shortest Path Calculator">
+                <div class="project-info">
                 <h3>Shortest Path Calculator</h3>
+                <p>As a C++ assignment, this application calculates the shortest distance between points using coordinates and implements sorting algorithms to optimize pathfinding.</p>
+            </div>
             </a>
-            <p>Short description...</p>
+
+        </div>
+
+        <div class="project-item">
 
             <a href="projets.html#project5">
-                <img src="path/to/project1-thumbnail.jpg" alt="E-commerce Systeme Thumbnail">
+                <img src="sql.png" alt="E-commerce Systeme Thumbnail">
+                <div class="project-info">
                 <h3>E-commerce Systeme Thumbnail</h3>
+                <p>In this project, created with <strong>Oracle SQL</strong>, I developed a database system to manage an electronic direct sales system for computer products. The system supports order management, deliveries, invoicing, payments, and user authentication, providing a comprehensive solution for e-commerce operations.</p>
+            </div>
             </a>
-            <p>Short description...</p>
+
+            
+        </div>
+
         </div>
     </section>
     <footer>
         <p>&copy; 2021 Martin Chardenet</p>
-    <script src="script.js"></script> <!-- Use this for any JavaScript enhancements -->
+    <script src="script.js"></script>
+</div> <!-- Use this for any JavaScript enhancements -->
 </body>
 </html>
