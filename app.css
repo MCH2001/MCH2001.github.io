@@ -1,0 +1,129 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body, h1, h2, h3, p, a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Use a sans-serif font for a modern look */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f3f4; /* Light blue background */
+    color: #333; /* Darker text for contrast */
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+    background-color: white; /* White central block */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the central container */
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center navbar items horizontally */
+    align-items: center; /* Center navbar items vertically */
+    background: #8994a0; /* Blue background for navbar */
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    display: inline-block;
+    margin: 0 10px; /* Space out the navbar items */
+}
+
+.navbar a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.about-me, .portfolio {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project a {
+    display: block; /* Ensure the link takes up the whole grid item */
+    background: #e3e3e3; /* Light grey background for each project */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for project links */
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.project img {
+    max-width: 100%; /* Ensure the image is never more than the container width */
+    height: auto; /* Maintain the original aspect ratio */
+    margin-bottom: 15px; /* Add some space between the image and the text */
+}
+
+.project a:hover {
+    background: #d1d1d1; /* Darker grey on hover */
+}
+
+.footer {
+    background: #007bff; /* Blue background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+.portfolio {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.project-item {
+    background: #e3e3e3; /* Light grey background for each project */
+    border-radius: 10px; /* Rounded corners for project containers */
+    overflow: hidden; /* Ensures that the border radius clips the content */
+    margin-bottom: 20px; /* Space between project items */
+    transition: background-color 0.3s;
+}
+
+.project-item:hover {
+    background: #d1d1d1; /* Darker grey on hover */
+}
+
+.project-item a {
+    display: flex; /* Use flexbox to align image and description side by side */
+    align-items: center; /* Center items vertically */
+    text-decoration: none;
+    color: black; /* Text color for the project info */
+}
+
+.project-item img {
+    max-width: 50%; /* Set a maximum width for the image */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent the image from shrinking below its natural size */
+    margin-right: 20px; /* Space between the image and the description */
+}
+
+.project-info {
+    padding: 20px; /* Padding inside the project description */
+    text-align: left; /* Align text to the left */
+}
