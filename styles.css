@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    background-color: #005A9C;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.project {
+    background-color: white;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project-description, .details {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h2 {
+    color: #005A9C;
+}
+
+p, li {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: url('bullet.png') no-repeat left;
+    padding-left: 20px; /* Adjust based on your actual bullet image size */
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: "•";
+    color: #005A9C;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: #005A9C;
+}
+
+@media (max-width: 768px) {
+    .project {
+        width: 95%;
+    }
+}
+
+img {
+    width: 300px; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners to images */
+}
+
+footer{
+    background-color: #005A9C;
+}
+
+.elegant-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjusts the size */
+    background-color: #007BFF; /* Primary button color */
+    color: white; /* Text color */
+    text-align: center; /* Ensures text is centered */
+    text-decoration: none; /* Removes underline from anchor tag */
+    font-size: 16px; /* Text size */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .elegant-button:hover, .elegant-button:focus {
+    background-color: #0056b3; /* Darker shade on hover/focus for feedback */
+    transform: scale(1.05); /* Slightly enlarges the button */
+    color: #FFF; /* Maintains text color */
+    text-decoration: none; /* Ensures text remains non-underlined */
+  }
+  
+
+  .project video {
+    display: block; /* Ensures the video is block-level to fit the container width */
+    max-width: 100%; /* Ensures the video is responsive and does not overflow its container */
+    height: auto; /* Maintains the video's aspect ratio */
+    border-radius: 8px; /* Adds rounded corners to the video similar to the images */
+    margin: 20px auto; /* Centers the video within the project div and adds some margin for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.project-description {
+    border-top: 1px solid #eee; /* Adds a subtle line to separate video from the description */
+}
